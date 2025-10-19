@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx2eodl41gxm6"]
+
+[ext_resource type="Script" uid="uid://bmgfwkvt7ijoy" path="res://FloatingObject.gd" id="1_h40nn"]
+[ext_resource type="Texture2D" uid="uid://b33akoxejevr0" path="res://icon.svg" id="1_xljvd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h40nn"]
+
+[node name="Ship" type="Node2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_h40nn")
+metadata/_custom_type_script = "uid://bmgfwkvt7ijoy"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_h40nn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.192093e-07, 1.192093e-07)
+scale = Vector2(0.15625001, 0.15625001)
+texture = ExtResource("1_xljvd")
