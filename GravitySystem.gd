@@ -1,4 +1,3 @@
-# Autoload this as a singleton
 extends Node
 
 @export var GRAVITY_CONSTANT: float = 10000

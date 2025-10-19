@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmbfvfw2e188a"]
 
 [ext_resource type="PackedScene" uid="uid://lpgtwlgx3xh8" path="res://Ship.tscn" id="1_ecc80"]
-[ext_resource type="Texture2D" uid="uid://du6n683vrua1v" path="res://assets/officePaperBackground.png" id="2_rtyl3"]
+[ext_resource type="Texture2D" uid="uid://b662deinjmx8y" path="res://assets/officePaperBackground.png" id="2_rtyl3"]
 [ext_resource type="PackedScene" uid="uid://duogv6kugnck2" path="res://body_50_cent.tscn" id="3_nv34k"]
 
 [node name="Environment" type="Node2D"]
@@ -23,3 +23,8 @@ stretch_mode = 1
 position = Vector2(718, 457)
 scale = Vector2(7.74, 7.74)
 uniform_scale = 7.74
+
+[node name="body_50cent2" parent="." instance=ExtResource("3_nv34k")]
+position = Vector2(1534, 965)
+scale = Vector2(15.835, 15.835)
+uniform_scale = 15.835

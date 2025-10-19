@@ -20,11 +20,11 @@ func _get_configuration_warnings() -> PackedStringArray:
 	get:
 		return _uniform_scale
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _ready():
+	connect("input_event", Callable(self, "_on_input_event"))
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_input_event(_viewport, event, _shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		self.uniform_scale += 0.5
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+		self.uniform_scale -= 0.5
