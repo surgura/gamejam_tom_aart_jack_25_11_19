@@ -2,17 +2,27 @@ extends Node2D
 
 class_name FloatingObject
 
-var velocity = Vector2(0,0)
-var lowFps:int = 0
+@export var velocity = Vector2(0,0)
+
+@onready var _start_position: Vector2 = global_position
+@onready var _start_velocity: Vector2 = velocity
 @onready var rocketSFX = $Rocket
 
-func _ready():
+var lowFps:int = 0
+
+func _ready() -> void:
+	Gamestate.ship = self
 	rocketSFX.play() 
 
-func _physics_process(delta) -> void:
-	velocity += GravitySystem.gravity_at(position) * delta
-	position += velocity * delta
+func reset() -> void:
+	global_position = _start_position
+	velocity = _start_velocity
 	
-	if (velocity != Vector2.ZERO) && (lowFps%10 == 0):
-		look_at(global_position + velocity)
-	lowFps += 1
+func _physics_process(delta) -> void:
+	if !Gamestate.is_paused:
+		velocity += GravitySystem.gravity_at(position) * delta
+		position += velocity * delta
+		
+		if (velocity != Vector2.ZERO) && (lowFps%10 == 0):
+			look_at(global_position + velocity)
+		lowFps += 1

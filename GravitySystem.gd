@@ -1,7 +1,6 @@
-# Autoload this as a singleton
 extends Node
 
-@export var GRAVITY_CONSTANT: float = 50000
+@export var GRAVITY_CONSTANT: float = 10000
 
 var sources: Array[GravitySource] = []
 
