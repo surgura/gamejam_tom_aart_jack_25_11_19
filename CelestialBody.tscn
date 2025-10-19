@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bj48tdhesexc4"]
+
+[ext_resource type="Script" path="res://GravitySource.gd" id="1_srte8"]
+
+[node name="CelestialBody" type="Sprite2D"]
+script = ExtResource("1_srte8")

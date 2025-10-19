@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw3uvjykkoo7a"
-path="res://.godot/imported/rocket.png-ee7caa6d60b8c73f0b17d79a887f39b7.ctex"
+uid="uid://chlnxo52qmlum"
+path="res://.godot/imported/officePaperBackground.png-8854fd75c1a7b441444d7a65ddb24f62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/rocket.png"
-dest_files=["res://.godot/imported/rocket.png-ee7caa6d60b8c73f0b17d79a887f39b7.ctex"]
+source_file="res://assets/Images/officePaperBackground.png"
+dest_files=["res://.godot/imported/officePaperBackground.png-8854fd75c1a7b441444d7a65ddb24f62.ctex"]
 
 [params]
 

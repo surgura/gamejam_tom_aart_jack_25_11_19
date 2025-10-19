@@ -2,12 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://lpgtwlgx3xh8" path="res://Ship.tscn" id="1_ecc80"]
 [ext_resource type="Texture2D" uid="uid://b662deinjmx8y" path="res://assets/officePaperBackground.png" id="2_rtyl3"]
-[ext_resource type="PackedScene" path="res://body_50_cent.tscn" id="3_nv34k"]
+[ext_resource type="PackedScene" uid="uid://dw1ewbqk53nir" path="res://coffeeCup.tscn" id="4_wa2n3"]
 
 [node name="Environment" type="Node2D"]
 
 [node name="Ship" parent="." instance=ExtResource("1_ecc80")]
 position = Vector2(370.99997, 563.99994)
+
+[node name="Camera2D" type="Camera2D" parent="Ship"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -10
@@ -19,7 +21,14 @@ mouse_filter = 2
 texture = ExtResource("2_rtyl3")
 stretch_mode = 1
 
-[node name="body_50cent" parent="." instance=ExtResource("3_nv34k")]
-position = Vector2(718, 457)
-scale = Vector2(8.37, 8.37)
-uniform_scale = 8.37
+[node name="body_50cent3" parent="." instance=ExtResource("4_wa2n3")]
+position = Vector2(929, 938)
+scale = Vector2(6.49, 6.49)
+
+[node name="body_50cent" parent="." instance=ExtResource("4_wa2n3")]
+position = Vector2(1426, 459)
+scale = Vector2(18.965, 18.965)
+
+[node name="body_50cent2" parent="." instance=ExtResource("4_wa2n3")]
+position = Vector2(1732, 1381)
+scale = Vector2(11.935, 11.935)

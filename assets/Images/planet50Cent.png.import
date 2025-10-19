@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw3uvjykkoo7a"
-path="res://.godot/imported/rocket.png-ee7caa6d60b8c73f0b17d79a887f39b7.ctex"
+uid="uid://burln5ipi74wl"
+path="res://.godot/imported/planet50Cent.png-6ab6704393a0bd94dcf9473a66fd6cdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/rocket.png"
-dest_files=["res://.godot/imported/rocket.png-ee7caa6d60b8c73f0b17d79a887f39b7.ctex"]
+source_file="res://assets/Images/planet50Cent.png"
+dest_files=["res://.godot/imported/planet50Cent.png-6ab6704393a0bd94dcf9473a66fd6cdb.ctex"]
 
 [params]
 

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw1ewbqk53nir"]
+
+[ext_resource type="PackedScene" path="res://celestial_body.tscn" id="1_lg10i"]
+[ext_resource type="Texture2D" uid="uid://vm3umpqqgqkt" path="res://assets/Images/planetCoffeeCup.png" id="2_lg10i"]
+
+[node name="body_50cent" instance=ExtResource("1_lg10i")]
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="2"]
+scale = Vector2(0.345, 0.345)
+texture = ExtResource("2_lg10i")
