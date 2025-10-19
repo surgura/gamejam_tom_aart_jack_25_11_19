@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://lpgtwlgx3xh8"]
 
-[ext_resource type="Script" path="res://FloatingObject.gd" id="1_h40nn"]
+[ext_resource type="Script" uid="uid://bmgfwkvt7ijoy" path="res://FloatingObject.gd" id="1_h40nn"]
 [ext_resource type="Texture2D" uid="uid://6i3iu3mjjg3y" path="res://assets/rocket.png" id="2_h40nn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h40nn"]
@@ -16,5 +16,6 @@ shape = SubResource("CircleShape2D_h40nn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.192093e-07, 1.192093e-07)
+rotation = 1.5707964
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_h40nn")
