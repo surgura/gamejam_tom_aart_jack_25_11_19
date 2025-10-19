@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw3uvjykkoo7a"
-path="res://.godot/imported/rocket.png-ee7caa6d60b8c73f0b17d79a887f39b7.ctex"
+uid="uid://vm3umpqqgqkt"
+path="res://.godot/imported/planetCoffeeCup.png-149a0fa89bd324377462504f6dd1695f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/rocket.png"
-dest_files=["res://.godot/imported/rocket.png-ee7caa6d60b8c73f0b17d79a887f39b7.ctex"]
+source_file="res://assets/Images/planetCoffeeCup.png"
+dest_files=["res://.godot/imported/planetCoffeeCup.png-149a0fa89bd324377462504f6dd1695f.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@ extends Node2D
 
 class_name FloatingObject
 
-@export var velocity = Vector2(0,0)
+@export var velocity = Vector2(100,30)
 
 @onready var _start_position: Vector2 = global_position
 @onready var _start_velocity: Vector2 = velocity
