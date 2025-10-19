@@ -1,8 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://lpgtwlgx3xh8"]
+[gd_scene load_steps=9 format=3 uid="uid://lpgtwlgx3xh8"]
 
 [ext_resource type="Script" uid="uid://bmgfwkvt7ijoy" path="res://FloatingObject.gd" id="1_h40nn"]
 [ext_resource type="Texture2D" uid="uid://6i3iu3mjjg3y" path="res://assets/rocket.png" id="2_h40nn"]
 [ext_resource type="AudioStream" uid="uid://chnmuno7uqh2v" path="res://assets/Sounds/Alarm.ogg" id="3_oam5h"]
+[ext_resource type="AudioStream" uid="uid://bd3xt6pfv4gnl" path="res://assets/Sounds/Boom.ogg" id="4_qyh8x"]
+[ext_resource type="AudioStream" uid="uid://ceg2xnwpcoae1" path="res://assets/Sounds/InkPickup.ogg" id="5_0p50t"]
+[ext_resource type="AudioStream" uid="uid://c74r1xa1iufxs" path="res://assets/Sounds/Rocket.ogg" id="6_oj4er"]
+[ext_resource type="AudioStream" uid="uid://dmoltge6f66h0" path="res://assets/Sounds/TepexPickup.ogg" id="7_ipukm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h40nn"]
 
@@ -23,3 +27,16 @@ texture = ExtResource("2_h40nn")
 
 [node name="Alarm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_oam5h")
+
+[node name="Boom" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_qyh8x")
+
+[node name="InkPickup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0p50t")
+
+[node name="Rocket" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_oj4er")
+bus = &"Rocket"
+
+[node name="TepexPickup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ipukm")
