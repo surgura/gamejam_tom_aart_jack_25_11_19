@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmbfvfw2e188a"]
+[gd_scene load_steps=5 format=3 uid="uid://dmbfvfw2e188a"]
 
-[ext_resource type="PackedScene" path="res://Ship.tscn" id="1_ecc80"]
+[ext_resource type="PackedScene" uid="uid://cx2eodl41gxm6" path="res://Ship.tscn" id="1_ecc80"]
+[ext_resource type="Texture2D" uid="uid://b33akoxejevr0" path="res://icon.svg" id="2_nv34k"]
 [ext_resource type="Texture2D" uid="uid://du6n683vrua1v" path="res://assets/officePaperBackground.png" id="2_rtyl3"]
+[ext_resource type="PackedScene" uid="uid://bj48tdhesexc4" path="res://CelestialBody.tscn" id="3_wa2n3"]
 
 [node name="Environment" type="Node2D"]
 
@@ -17,3 +19,11 @@ offset_bottom = 1929.0
 mouse_filter = 2
 texture = ExtResource("2_rtyl3")
 stretch_mode = 1
+
+[node name="CelestialBody" parent="." instance=ExtResource("3_wa2n3")]
+position = Vector2(554, 459)
+texture = ExtResource("2_nv34k")
+
+[node name="CelestialBody2" parent="." instance=ExtResource("3_wa2n3")]
+position = Vector2(405, 813)
+texture = ExtResource("2_nv34k")
