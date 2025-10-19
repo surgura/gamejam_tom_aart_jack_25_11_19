@@ -9,6 +9,8 @@
 [node name="Ship" parent="." instance=ExtResource("1_ecc80")]
 position = Vector2(370.99997, 563.99994)
 
+[node name="Camera2D" type="Camera2D" parent="Ship"]
+
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -10
 offset_left = -70.0
